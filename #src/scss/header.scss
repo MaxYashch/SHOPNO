@@ -1,0 +1,139 @@
+.header {
+	background-color: #eff0f2;
+	padding: 63px 0 129px 0;
+}
+
+@media (max-width: 767px) {
+	.header {       
+		padding: 33px 0 59px 0;
+    }
+}
+
+// .header__logo {
+// 	border: 5.54px solid #170f1c;
+// 	max-width: 113px;
+// 	font-size: 17px;
+// 	letter-spacing: 1px;
+// 	line-height: 28px;
+// 	color: #000000;
+// 	font-weight: 700;
+// 	text-transform: uppercase;
+// 	font-family: $Mons;
+// 	text-align: center;
+// 	filter: drop-shadow(0 0 1px rgba(21,21,22,0.75))
+// }
+
+.header__logo {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 206px;
+	width: 100%;
+}
+
+@media (max-width: 1019px) {
+	.header__logo {       
+        margin-bottom: 120px;
+    }
+}
+
+.blue-mark {
+	background-color: $blue;
+}
+
+.header__title {
+	display: flex;
+	font-size: 45px;
+	font-size: calc(30px + 15 * ((100vw - 320px) / (1440 - 320)));
+	letter-spacing: 3px;
+	line-height: 32px;
+	
+	color: #505050;
+	font-weight: 700;
+	font-family: $Mons;
+	text-align: center;
+	text-transform: uppercase;
+	filter: drop-shadow(3.517px 8.285px 5px rgba(0,0,0,0.24));
+
+	margin-bottom: 25px;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.header__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 124px;
+}
+
+@media (max-width: 1019px) {
+	.header__btn {       
+        margin-top: 84px;
+    }
+}
+
+@media (max-width: 767px) {
+	.header__btn {       
+		margin-top: 50px;
+		justify-content: flex-start;
+	}
+	.header__title {		
+		margin-bottom: 15px;
+	}
+}
+
+// .header__btn:hover > .header__btn-contact {
+// 	transition: 0.2s;
+// 	transform: scale(1.1);
+// }
+
+.header__btn-contact {
+	padding: 20px 48px;
+	border-radius: 2px;
+	border: 2px solid #777879;
+	font-size: 18px;
+	letter-spacing: 1.2px;
+	line-height: 28px;
+	color: #3c3c3d;
+	text-transform: uppercase;
+	font-family: $Mons;
+}
+
+// .header__btn-contact:hover {
+	
+// }
+
+@media (max-width: 767px) {
+	.header__btn-contact {
+		padding: 10px 26px;
+		font-size: 14px;
+    }
+}
+
+.header__img {
+	display: flex;
+	flex: 0 0 33.33%;
+	position: relative;
+	justify-content: flex-end;	
+	margin: -60px 66px 0 auto;
+}
+
+.header__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;   // not working
+}
+
+@media (max-width: 767px) {
+	.header__btn {       
+		margin-top: 64px;
+		justify-content: flex-start;
+	}
+	
+	.header__img {		
+		margin: -25px 0 0 auto;
+	}
+}
+
