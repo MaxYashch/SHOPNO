@@ -3,6 +3,12 @@
 	padding: 130px 0 122px 0;
 }
 
+@media (max-width: 767px) {
+	.works {       
+		padding: 33px 0 59px 0;
+    }
+}
+
 .works__title {
 	display: flex;
 	justify-content: center;
@@ -35,6 +41,11 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .works__images-row-item {
-	margin: 5px;
+	margin: 2px;
+}
+
+.works__images-row-item img {
+	max-width: 100%;
 }

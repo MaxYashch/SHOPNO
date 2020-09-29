@@ -1,52 +1,80 @@
-<div class="message-form">
+<div class="message">
     <div class="container">
-        <div class="container__inner">
-            <div class="message-form__row">
 
+        <div class="message__row">
 
+            <div class="message__row-column">
+                <div class="message__row-form-inner">
 
-
-                <form action="mailto:someone@example.com" method="post"
-                    class="message-form__row-message-form form-group">
-
-                    <!-- <fieldset id="fs-frm-inputs"> -->
-
-
-                    <div class="form-group__item">
-                        <label for='name'>Name*</label>
-                        <input type="text" name="name" class="form-group__item-control">
-                    </div>
-                    <div class="form-group__item">
-                        <label for='submit'>Submit*</label>
-                        <textarea rows="3" name="message" class="form-group__item-control"></textarea>
-                    </div>
-                    <div class="form-group__item">
-                        <label for='email'>E-mail*</label>
-                        <input type="email" name="email" class="form-group__item-control">
-                    </div>
-                    <div class="form-group__item">
-                        <label for='message'>Message*</label>
-                        <textarea rows="3" name="message" class="form-group__item-control"></textarea>
-                    </div>
-
-                    <!-- </fieldset> -->
-                    <input type="submit" value="send message" className="form-group__button">
-                    <!-- <button type="submit" className="form-group__button">send message</button> -->
-                </form>
-
-
-
-
-
-
-
-                <div class="message-form__row-location-form">
-
-
+                    <form action="#" class="message__row-form-inner-body">
+                        <div class="message__row-form-inner-line">
+                            <input autocomplete="off" type="text" placeholder="Name*" class="input req" />
+                        </div>
+                        <div class="message__row-form-inner-line">
+                            <input autocomplete="off" type="text" placeholder="Subject*" class="input" />
+                        </div>
+                        <div class="message__row-form-inner-line">
+                            <input autocomplete="off" type="text" placeholder="E-mail*" class="input" />
+                        </div>
+                        <div class="message__row-form-inner-line">
+                            <textarea autocomplete="off" placeholder="Message" class="input"></textarea>
+                        </div>
+                        <div class="message__row-form-inner-button">
+                            <button type="submit" class="message__row-form-inner__btn">Send message</button>
+                        </div>
+                    </form>
                 </div>
-
-
             </div>
+
+
+
+
+
+
+
+
+
+            <div class="message__row-column">
+                <div class="message__row-map-attr">Adress Line 1</div>
+                <div class="message__row-map-attr">Adress Line 2</div>
+                <div class="message__row-map-attr">Phone: +548123456</div>
+                <div class="message__row-map-attr">Fax: +123456 12345</div>
+                <div class="message__row-map-attr web">Web: www.designagency.net</div>
+                <div class="message__row-map-attr web">E-mail: info@designagency.net5</div>
+                <div class="message__row-map-loc" id="map"></div>
+            </div>
+
         </div>
+
     </div>
 </div>
+
+
+
+<!-- 
+<form action="mailto:someone@example.com" method="post" class="message__row-message form-group">
+
+    
+
+
+    <div class="form-group__item">
+        <label for='name'>Name*</label>
+        <input type="text" name="name" class="form-group__item-control">
+    </div>
+    <div class="form-group__item">
+        <label for='submit'>Submit*</label>
+        <textarea rows="3" name="message" class="form-group__item-control"></textarea>
+    </div>
+    <div class="form-group__item">
+        <label for='email'>E-mail*</label>
+        <input type="email" name="email" class="form-group__item-control">
+    </div>
+    <div class="form-group__item">
+        <label for='message'>Message*</label>
+        <textarea rows="3" name="message" class="form-group__item-control"></textarea>
+    </div>
+
+   
+    <input type="submit" value="send message" className="form-group__button">
+   
+</form> -->

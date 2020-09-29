@@ -6,7 +6,7 @@ $Merri: 'Merriweather', Arial, Helvetica, sans-serif;
 $Rale: 'Raleway', Arial, Helvetica, sans-serif;
 
 
-$blue: b2f2ee;
+$blue: #b2f2ee;
 
 
 .wrapper {
@@ -79,13 +79,11 @@ a {
 
 
 
+@import "team.scss";
 
 
 
-
-
-
-
+@import "message.scss";
 
 
 
