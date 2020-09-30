@@ -9,13 +9,16 @@
 
 .message__row-column {
     background-color: #4a5862;
-    // opacity: 0.8;
     padding: 33px 33px 20px 33px;
     margin-right: 25px;
+    flex: 2 1 auto;
+    opacity: 0.9;
 }
 
 .message__row-column:last-child {
     margin-right: 0px;
+    flex: 1 1 auto;
+
 }
 
 .message__row-form-inner {
@@ -33,19 +36,22 @@
     font-family: $Rale;
     background-color: #4a5862;
     border-bottom: 1px solid #b1babf;
-    ;
+    
 }
 
 .input { 
+    // display: flex;
+    // align-items: center;
     background-color: #4a5862;    
+    color: #b1babf;
 }
-
-.req { }
 
 .message__row-form-inner-button {
     margin: 38px 0px 17px 0px;
     background-color: #6eeee4;   
-    padding: 20px 38px;
+    padding: 20px 36px;
+    max-width: 245px;
+    opacity: 1;
 }
 
 .message__row-form-inner__btn {
@@ -58,14 +64,6 @@
     font-family: $Mons;
 }
 
-
-
-.web:last-child{
-    margin-top: 0px;
-}
-
-.message__row-map { }
-
 .message__row-map-attr {
     font-size: 15px;
     line-height: 24px;
@@ -75,12 +73,24 @@
     margin-bottom: 10px;
 }
 
-.web{
-    margin-top: 33px;    
+.message__row-map-attr:nth-child(5) {
+    margin-top: 33px;
 }
 
-.web:last-child{
-    margin-top: 0px;    
+.textarea {
+    padding-top: 30px;
+    max-height: 300%;
+}
+  
+// .map {
+//     width: 100%;
+//     height: 500px;
+// }
+
+
+
+.img-text{
+display: none;
 }
 
-.message__row-map-loc { }
+  

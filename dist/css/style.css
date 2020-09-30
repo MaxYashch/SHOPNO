@@ -439,10 +439,17 @@ img {
   background-color: #4a5862;
   padding: 33px 33px 20px 33px;
   margin-right: 25px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 auto;
+          flex: 2 1 auto;
+  opacity: 0.9;
 }
 
 .message__row-column:last-child {
   margin-right: 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .message__row-form-inner-line {
@@ -456,12 +463,15 @@ img {
 
 .input {
   background-color: #4a5862;
+  color: #b1babf;
 }
 
 .message__row-form-inner-button {
   margin: 38px 0px 17px 0px;
   background-color: #6eeee4;
-  padding: 20px 38px;
+  padding: 20px 36px;
+  max-width: 245px;
+  opacity: 1;
 }
 
 .message__row-form-inner__btn {
@@ -474,10 +484,6 @@ img {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
-.web:last-child {
-  margin-top: 0px;
-}
-
 .message__row-map-attr {
   font-size: 15px;
   line-height: 24px;
@@ -486,12 +492,17 @@ img {
   margin-bottom: 10px;
 }
 
-.web {
+.message__row-map-attr:nth-child(5) {
   margin-top: 33px;
 }
 
-.web:last-child {
-  margin-top: 0px;
+.textarea {
+  padding-top: 30px;
+  max-height: 300%;
+}
+
+.img-text {
+  display: none;
 }
 
 @media (max-width: 1019px) {
