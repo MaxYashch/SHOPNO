@@ -1,49 +1,40 @@
 <div class="message">
     <div class="container">
 
-        <div class="message__row">
-
-            <div class="message__row-column">
-                <div class="message__row-form-inner">
-
-                    <form action="#" class="message__row-form-inner-body">
-                        <div class="message__row-form-inner-line">
-                            <input autocomplete="off" type="text" placeholder="Name*" class="input req" />
+        <div class="message__grid">
+            <div class="message__cell message__cell--form">
+                <div class="message__box">
+                    <form action="#" class="message__form">
+                        <div class="message__form-row">
+                            <input autocomplete="off" type="text" placeholder="Name*" class="message__input req" />
                         </div>
-                        <div class="message__row-form-inner-line">
-                            <input autocomplete="off" type="text" placeholder="Subject*" class="input" />
+                        <div class="message__form-row">
+                            <input autocomplete="off" type="text" placeholder="Subject*" class="message__input" />
                         </div>
-                        <div class="message__row-form-inner-line">
-                            <input autocomplete="off" type="text" placeholder="E-mail*" class="input" />
+                        <div class="message__form-row">
+                            <input autocomplete="off" type="text" placeholder="E-mail*" class="message__input" />
                         </div>
-                        <div class="message__row-form-inner-line textarea">
-                            <textarea autocomplete="off" placeholder="Message" class="input"></textarea>
+                        <div class="message__form-row">
+                            <textarea autocomplete="off" placeholder="Message"
+                                class="message__input message__input--textarea"></textarea>
                         </div>
-                        <div class="message__row-form-inner-button">
-                            <button type="submit" class="message__row-form-inner__btn">Send message</button>
+                        <div class="message__form-actions">
+                            <button type="submit" class="message__form-button">Send message</button>
                         </div>
                     </form>
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-            <div class="message__row-column">
-                <div class="message__row-map-attr">Adress Line 1</div>
-                <div class="message__row-map-attr">Adress Line 2</div>
-                <div class="message__row-map-attr">Phone: +548123456</div>
-                <div class="message__row-map-attr">Fax: +123456 12345</div>
-                <div class="message__row-map-attr">Web: www.designagency.net</div>
-                <div class="message__row-map-attr">E-mail: info@designagency.net5</div>
-
-                <div class="message__row-map-loc" id="map" style="width:100%;height:220px;"></div>
-
+            <div class="message__cell message__cell--info">
+                <div class="message__box">
+                    <div class="message__row-map-attr">Adress Line 1</div>
+                    <div class="message__row-map-attr">Adress Line 2</div>
+                    <div class="message__row-map-attr">Phone: +548123456</div>
+                    <div class="message__row-map-attr">Fax: +123456 12345</div>
+                    <div class="message__row-map-attr">Web: www.designagency.net</div>
+                    <div class="message__row-map-attr">E-mail: info@designagency.net5</div>
+                    <div class="message__row-map-loc" id="map" style="width:100%;height:220px;"></div>
+                </div>
             </div>
 
         </div>
