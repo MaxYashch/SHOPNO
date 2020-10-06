@@ -1,0 +1,139 @@
+.header {
+	background-color: #eff0f2;
+	position: relative;
+}
+
+.header__container {
+	display: flex;
+	flex-direction: column;
+	min-height: 805px;
+	padding-top: 63px;
+	padding-bottom: 63px;
+}
+
+@media (max-width: 767px) {
+	.header__container {
+		padding-top: 30px;
+		padding-bottom: 55px;
+    }
+}
+
+.header__logo {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 65px;
+	width: 100%;
+}
+
+@media (max-width: 1019px) {
+	.header__logo {       
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 320px) {
+	.header__logo {       
+        margin-bottom: 70px;
+    }
+}
+
+.header__content {
+	z-index: 2;
+	position: relative;
+	margin: auto 0;
+}
+
+.header__title-mark {
+	background-color: $blue;
+	padding: 0 10px;
+	margin: 0 -5px;
+}
+
+.header__title {
+	font-size: 45px;
+	font-size: calc(30px + 15 * ((100vw - 320px) / (1440 - 320)));
+	letter-spacing: 3px;
+	line-height: 60px;
+	
+	color: #505050;
+	font-weight: 700;
+	font-family: $Mons;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 3.517px 8.285px 5px rgba(0,0,0,0.24);
+
+	margin-bottom: 25px;
+}
+
+.header__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 124px;
+}
+
+@media (max-width: 1019px) {
+	.header__btn {       
+        margin-top: 84px;
+    }
+}
+
+@media (max-width: 767px) {
+	.header__btn {       
+		margin-top: 50px;
+	}
+	.header__title {		
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 320px) {
+	.header__btn {       
+        margin-top: 34px;
+    }
+}
+
+.header__btn-contact {
+	padding: 20px 48px;
+	border-radius: 2px;
+	border: 2px solid #777879;
+	font-size: 18px;
+	letter-spacing: 1.2px;
+	line-height: 28px;
+	color: #3c3c3d;
+	text-transform: uppercase;
+	font-family: $Mons;
+	transition: .2s;	
+}
+
+.header__btn-contact:hover {
+	background: #fff;
+    color: #214744;
+}
+
+@media (max-width: 767px) {
+	.header__btn-contact {
+		padding: 10px 26px;
+		font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+	.header__btn-contact {
+		padding: 8px 18px;
+		font-size: 12px;
+    }
+}
+
+.header__decor {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 180px 0 0 390px;
+}
+
+.header__decor-img {
+	max-width: 100px;	
+	max-height: 100px;	
+}
+
