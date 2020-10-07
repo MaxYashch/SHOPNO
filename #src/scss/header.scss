@@ -108,7 +108,8 @@
 
 .header__btn-contact:hover {
 	background: #fff;
-    color: #214744;
+	color: #214744;
+	transition: .2s;
 }
 
 @media (max-width: 767px) {

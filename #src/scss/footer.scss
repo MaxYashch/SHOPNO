@@ -19,23 +19,35 @@
     justify-content: center;
 }
 
-.footer__row-item {
+.footer__row-item {    
     margin-right: 7px;
     width: 46px;
     height: 41px;
     background-color: #424648;   
     cursor: pointer;
     transition: .2s;
-}
 
-.footer__row-item a img {
-    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .footer__row-item:hover {   
     background-color: $blue;
+    transition: .2s;   
 }
 
 .footer__row-item:last-child {
     margin-right: 0px;
+}
+
+.fa {
+    color: #aaa;
+    transition: .2s;
+}
+
+.footer__row-item:hover .fa {
+    color: #000;
+    transition: .2s;
 }
