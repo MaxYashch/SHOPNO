@@ -255,6 +255,9 @@ a {
 .header__btn-contact:hover {
   background: #fff;
   color: #214744;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 .header__decor {
@@ -578,6 +581,9 @@ a {
 .message__form-button:hover {
   background: #fff;
   color: #214744;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 .message__form-button:active {
@@ -640,18 +646,40 @@ a {
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s;
-}
-
-.footer__row-item a img {
-  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__row-item:hover {
   background-color: #b2f2ee;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 .footer__row-item:last-child {
   margin-right: 0px;
+}
+
+.fa {
+  color: #aaa;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.footer__row-item:hover .fa {
+  color: #000;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 @media (max-width: 1023px) {
