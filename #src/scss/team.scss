@@ -70,7 +70,7 @@
 
 .img-tip {
 	background-color: $blue;
-	padding: 44px 56px 42px 39px;
+	padding: 24px 39px 24px 39px;
 }
 
 .img-tip::before {
@@ -85,7 +85,7 @@
 }
 
 .img-tip__title {
-	font-size: 20px;
+	font-size: calc(12px + 8 * ((100vw - 320px) / (1440 - 320)));
 	letter-spacing: 1px;
 	line-height: 24px;
 	color: #2b3131;
@@ -93,11 +93,11 @@
 	font-family: $Merri;
 	text-align: center;
 	text-transform: uppercase;
-	margin-bottom: 23px;
+	margin-bottom: 10px;
 }
 
 .img-tip__title span {
-	font-size: 20px;
+	font-size: calc(12px + 8 * ((100vw - 320px) / (1440 - 320)));
 	letter-spacing: 1px;
 	line-height: 24px;
 	color: #767776;
@@ -108,11 +108,11 @@
 }
 
 .img-tip__description {	
-	font-size: 16px;	
+	font-size: calc(10px + 6 * ((100vw - 320px) / (1440 - 320)));	
 	line-height: 24px;
 	color: #000000;	
 	font-family: $Rale;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .img-tip__social a {
@@ -121,4 +121,43 @@
 
 .img-tip__social a:last-child {
 	margin-right: 0px;
+}
+
+
+@media (max-width: 767px) {
+	.img-tip {
+		padding: 15px 20px 15px 20px;
+	}
+	.img-tip__title {		
+		line-height: 16px;
+	}	
+	.img-tip__title span {
+		line-height: 16px;
+	}	
+	.img-tip__description {	
+		line-height: 16px;
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 320px) {
+	.team__tip {		
+		bottom: 9px;
+		left: 9px;
+		right: 9px;
+	}
+	.img-tip {
+		padding: 10px 10px 10px 10px;
+	}		
+	.img-tip__title {
+		line-height: 14px;
+		margin-bottom: 5px;
+	}
+	.img-tip__title span {		
+		line-height: 14px;		
+	}
+	.img-tip__description {	
+		line-height: 12px;
+		margin-bottom: 10px;
+	}
 }

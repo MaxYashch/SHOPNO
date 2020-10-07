@@ -398,7 +398,7 @@ a {
 
 .img-tip {
   background-color: #b2f2ee;
-  padding: 44px 56px 42px 39px;
+  padding: 24px 39px 24px 39px;
 }
 
 .img-tip::before {
@@ -413,7 +413,7 @@ a {
 }
 
 .img-tip__title {
-  font-size: 20px;
+  font-size: calc(12px + 8 * ((100vw - 320px) / (1440 - 320)));
   letter-spacing: 1px;
   line-height: 24px;
   color: #2b3131;
@@ -421,11 +421,11 @@ a {
   font-family: "Merriweather", Arial, Helvetica, sans-serif;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 23px;
+  margin-bottom: 10px;
 }
 
 .img-tip__title span {
-  font-size: 20px;
+  font-size: calc(12px + 8 * ((100vw - 320px) / (1440 - 320)));
   letter-spacing: 1px;
   line-height: 24px;
   color: #767776;
@@ -436,11 +436,11 @@ a {
 }
 
 .img-tip__description {
-  font-size: 16px;
+  font-size: calc(10px + 6 * ((100vw - 320px) / (1440 - 320)));
   line-height: 24px;
   color: #000000;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .img-tip__social a {
@@ -572,7 +572,6 @@ a {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   background-color: #6eeee4;
   padding: 20px 36px;
-  max-width: 245px;
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s;
@@ -749,6 +748,23 @@ a {
     width: calc(50% - 15px);
   }
 
+  .img-tip {
+    padding: 15px 20px 15px 20px;
+  }
+
+  .img-tip__title {
+    line-height: 16px;
+  }
+
+  .img-tip__title span {
+    line-height: 16px;
+  }
+
+  .img-tip__description {
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+
   .message__cell {
     width: 100%;
   }
@@ -772,6 +788,30 @@ a {
   .header__btn-contact {
     padding: 8px 18px;
     font-size: 12px;
+  }
+
+  .team__tip {
+    bottom: 9px;
+    left: 9px;
+    right: 9px;
+  }
+
+  .img-tip {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .img-tip__title {
+    line-height: 14px;
+    margin-bottom: 5px;
+  }
+
+  .img-tip__title span {
+    line-height: 14px;
+  }
+
+  .img-tip__description {
+    line-height: 12px;
+    margin-bottom: 10px;
   }
 }
 @supports (-webkit-appearance:none){
