@@ -3,15 +3,11 @@
 	padding: 130px 0 122px 0;
 }
 
-@media (max-width: 767px) {
-	.works {       
-		padding: 33px 0 59px 0;
-    }
-}
 
 .works__images-row {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .works__images-row-item {
@@ -20,4 +16,10 @@
 
 .works__images-row-item img {
 	max-width: 100%;
+}
+
+@media (max-width: 767px) {
+	.works {       
+		padding: 33px 0 59px 0;
+    }
 }

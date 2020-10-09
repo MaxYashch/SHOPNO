@@ -26,29 +26,18 @@ $blue: #b2f2ee;
 	width: 100%;
 }
 
-@media (max-width:1019px) {
-	.container {       
-        padding: 0 20gpx;
-    }
-}
-
-@media (max-width:767px) {
-	.container {       
-        padding: 0 29px;
-    }
-}
-
 .top-block__title {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 17px;
 
-	font-size: calc(24px + 14 * ((100vw - 320px) / (1440 - 320)));
+	font-size: calc(20px + 18 * ((100vw - 320px) / (1440 - 320)));
 	letter-spacing: 2px;
 	line-height: 28px;
 	color: #181919;
 	font-weight: 700;
 	text-transform: uppercase;
+	text-align: center;
 	font-family: $Mons;
 }
 
@@ -57,7 +46,7 @@ $blue: #b2f2ee;
 	justify-content: center;
 	margin-bottom: 139px;
 
-	font-size: calc(14px + 4 * ((100vw - 320px) / (1440 - 320)));;
+	font-size: calc(12px + 6 * ((100vw - 320px) / (1440 - 320)));;
 	letter-spacing: 1px;
 	line-height: 28px;
 	color: #5e5f5f;
@@ -75,40 +64,37 @@ a {
     background-color: $blue;
 }
 
-
-
-
-.click:hover {
-    transition: 0.2s;
-	transform: scale(1.1);
-	
-}
-
-.click:active {
-	transform: scale(0.9);
-	box-shadow: none;
-}
-
 @import "header.scss";
-
-
 
 @import "about.scss";
 
-
 @import "works.scss";
-
-
-
 
 @import "team.scss";
 
-
-
 @import "message.scss";
 
-
-
-
-
 @import "footer.scss";
+
+@media (max-width:1019px) {
+	.container {       
+        padding: 0 20gpx;
+	}	
+}
+
+@media (max-width:768px) {
+	.container {       
+        padding: 0 29px;
+	}
+	.top-block__text {
+		margin-bottom: 70px;
+		line-height: 28px;
+	}
+}
+
+@media (max-width:320px) {
+	.top-block__text {
+		margin-bottom: 30px;
+		line-height: 28px;
+	}
+}

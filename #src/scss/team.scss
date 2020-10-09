@@ -3,12 +3,6 @@
 	padding: 130px 0 122px 0;
 }
 
-@media (max-width: 767px) {
-	.team {       
-		padding: 33px 0 59px 0;
-    }
-}
-
 .team__grid {
 	display: flex;
 	flex-wrap: wrap;
@@ -123,6 +117,10 @@
 	margin-right: 0px;
 }
 
+.img-tip__social .fa {
+	color: #214946;
+}
+
 
 @media (max-width: 767px) {
 	.img-tip {
@@ -138,9 +136,15 @@
 		line-height: 16px;
 		margin-bottom: 15px;
 	}
+	.team {
+		padding: 50px 0;
+	}
 }
 
 @media (max-width: 320px) {
+	.team {
+		padding: 30px 0;
+	}
 	.team__tip {		
 		bottom: 9px;
 		left: 9px;

@@ -63,7 +63,7 @@
 }
 
 .message__form-actions {
-    margin: 38px 0px 0 0px;
+    margin: 38px 0px 0px 0px;
 }
 
 .message__form-button {
@@ -91,12 +91,12 @@
     color: #fff;
 }
 
-.message__row-map-attr {
-    font-size: 15px;
-    line-height: 24px;
+.message__row-map-attr,
+.message__row-map-attr a {
+    font-size: calc(12px + 3 * ((100vw - 320px) / (1440 - 320)));;
+    line-height: calc(16px + 8 * ((100vw - 320px) / (1440 - 320)));;
     color: #c5cbcf;
-    font-family: $Rale;
-    
+    font-family: $Rale;    
     margin-bottom: 10px;
 }
 
@@ -113,18 +113,51 @@
     .message__grid {
         margin: -10px;
     }
-
     .message__cell {
         padding: 10px;
     }
-
     .message__box {
         padding: 20px;
-    }
+    }    
 }
 
 @media (max-width: 767px) {
+    .message {
+        padding: 50px 0;
+    }
     .message__cell {
         width: 100%;
+    }
+    .message__input {        
+        line-height: 41px;
+    }
+    .message__form-button {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 15px 27px;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .message {
+        padding: 30px 0;
+    }
+    .message__input {        
+        line-height: 21px;
+    }
+    .message__input::placeholder {
+        font-size: 12px;
+    }
+    .message__form-actions {
+        margin: 26px 0px 0px 0px;
+    }
+    .message__form-button {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 18px;
+    }
+    .message__row-map-attr:nth-child(5) {
+        margin-top: 20px;
     }
 }
