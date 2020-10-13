@@ -11,12 +11,19 @@ previews.forEach(element => {
         const originalSrc = element.getAttribute('data-original');
         original.src = `img/${originalSrc}`;
         const altText = element.alt;
-        caption.textContent = originalSrc;
+        caption.textContent = altText;
     });
 });
 
 modal.addEventListener('click', (e) => {
-    if (e.target.classList.contains('modal')) {
+    if (!e.target.classList.contains('modal')) {
+        modal.classList.remove('open');
+        original.classList.remove('open');
+    }
+})
+
+document.addEventListener('keyup', (el) => {
+    if (el.keyCode == 27) {
         modal.classList.remove('open');
         original.classList.remove('open');
     }
