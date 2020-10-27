@@ -39,6 +39,7 @@
 	opacity: 0;
 	pointer-events: none;
 	transition: .2s;
+	
 }
 
 .works__modal p {
@@ -69,7 +70,6 @@
 	opacity: 1;
 	transform: translate(-50%, -50%) scale(1);
 	transition: .2s;
-	
 }
 
 @media (max-width: 767px) {
